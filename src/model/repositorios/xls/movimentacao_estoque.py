@@ -7,18 +7,6 @@ from src.model.repositorios.interfaces.movimentacao_estoque import MovimentacaoD
 
 
 class MovimentacaoDeEstoqueXls(MovimentacaoDeEstoque):
-    __columns_names: set = {
-        'nro_documento',
-        'tipo_movimento',
-        'cod_parceiro',
-        'data_movimento',
-        'cod_produto',
-        'descricao',
-        'marca',
-        'qtd_negociada',
-        'vlr_unitario',
-        'vlr_desconto'
-    }
 
     def buscar_movimentacao(self, dt_inicial: datetime, dt_final: datetime) -> MovimentoDeEstoque:
         xls_filepath = os.environ.get('XLS_FILE_PATH', None)
