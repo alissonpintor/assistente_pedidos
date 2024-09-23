@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Dados sensiveis da empresa em csv
+*.csv
+
 # Arquivos das aulas
 materiais/
 dataset/
